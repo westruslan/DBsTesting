@@ -1,14 +1,14 @@
 //
-//  BDTAppDelegate.m
+//  DBTAppDelegate.m
 //  DBsTesting
 //
 //  Created by Ruslan Topchenko on 12/9/13.
 //  Copyright (c) 2013 WSI. All rights reserved.
 //
 
-#import "BDTAppDelegate.h"
+#import "DBTAppDelegate.h"
 
-@implementation BDTAppDelegate
+@implementation DBTAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

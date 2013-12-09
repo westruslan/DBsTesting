@@ -1,5 +1,5 @@
 //
-//  BDTViewController.h
+//  DBTAppDelegate.h
 //  DBsTesting
 //
 //  Created by Ruslan Topchenko on 12/9/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BDTViewController : UIViewController
+@interface DBTAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

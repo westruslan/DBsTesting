@@ -1,18 +1,18 @@
 //
-//  BDTViewController.m
+//  DBTViewController.m
 //  DBsTesting
 //
 //  Created by Ruslan Topchenko on 12/9/13.
 //  Copyright (c) 2013 WSI. All rights reserved.
 //
 
-#import "BDTViewController.h"
+#import "DBTViewController.h"
 
-@interface BDTViewController ()
+@interface DBTViewController ()
 
 @end
 
-@implementation BDTViewController
+@implementation DBTViewController
 
 - (void)viewDidLoad
 {
@@ -24,6 +24,16 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)fmdbTestTapped
+{
+    NSLog(@"Spawning FMDBs");
+}
+
+- (IBAction)cdTestTapped
+{
+    NSLog(@"Spawning CoreData");
 }
 
 @end

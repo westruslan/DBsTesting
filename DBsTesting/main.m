@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BDTAppDelegate.h"
+#import "DBTAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([BDTAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([DBTAppDelegate class]));
     }
 }
