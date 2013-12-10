@@ -12,5 +12,6 @@
 
 - (IBAction)fmdbTestTapped;
 - (IBAction)cdTestTapped;
+- (IBAction)stopRunningTests;
 
 @end

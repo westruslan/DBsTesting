@@ -10,4 +10,31 @@
 
 @implementation DBTCoreDataManager
 
+- (void)setupDB
+{
+    NSLog(@"%s: not implemented", __PRETTY_FUNCTION__);
+}
+
+- (void)spawnReadOperation
+{
+    NSLog(@"%s: not implemented", __PRETTY_FUNCTION__);
+}
+
+- (void)spawnWriteOperation
+{
+    NSLog(@"%s: not implemented", __PRETTY_FUNCTION__);
+}
+
+- (void)spawnClearOperation
+{
+    NSLog(@"%s: not implemented", __PRETTY_FUNCTION__);
+}
+
+- (void)teardownDB
+{
+    [super teardownDB];
+    
+    NSLog(@"%s: not implemented", __PRETTY_FUNCTION__);
+}
+
 @end

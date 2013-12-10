@@ -29,6 +29,11 @@
 		E248AF1C1855F76700E99F50 /* DBTFmdbManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E248AF1B1855F76700E99F50 /* DBTFmdbManager.m */; };
 		E248AF1F1855F7A500E99F50 /* DBTCoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E248AF1E1855F7A500E99F50 /* DBTCoreDataManager.m */; };
 		E248AF211855F9D000E99F50 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E248AF201855F9D000E99F50 /* icon.png */; };
+		E248AF251857084E00E99F50 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E248AF241857084E00E99F50 /* Default-568h@2x.png */; };
+		E248AF2B18571C9B00E99F50 /* FmdbOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E248AF2A18571C9B00E99F50 /* FmdbOperation.m */; };
+		E248AF2E18571E2C00E99F50 /* FmdbWriteOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E248AF2D18571E2C00E99F50 /* FmdbWriteOperation.m */; };
+		E248AF3118571E4200E99F50 /* FmdbReadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E248AF3018571E4200E99F50 /* FmdbReadOperation.m */; };
+		E2ADDF331857312800352D0B /* FmdbClearOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E2ADDF321857312800352D0B /* FmdbClearOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +103,15 @@
 		E248AF1D1855F7A500E99F50 /* DBTCoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DBTCoreDataManager.h; path = "DB Managers/DBTCoreDataManager.h"; sourceTree = "<group>"; };
 		E248AF1E1855F7A500E99F50 /* DBTCoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DBTCoreDataManager.m; path = "DB Managers/DBTCoreDataManager.m"; sourceTree = "<group>"; };
 		E248AF201855F9D000E99F50 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		E248AF241857084E00E99F50 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E248AF2918571C9B00E99F50 /* FmdbOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbOperation.h; path = Operations/FmdbOperation.h; sourceTree = "<group>"; };
+		E248AF2A18571C9B00E99F50 /* FmdbOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbOperation.m; path = Operations/FmdbOperation.m; sourceTree = "<group>"; };
+		E248AF2C18571E2C00E99F50 /* FmdbWriteOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbWriteOperation.h; path = Operations/FmdbWriteOperation.h; sourceTree = "<group>"; };
+		E248AF2D18571E2C00E99F50 /* FmdbWriteOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbWriteOperation.m; path = Operations/FmdbWriteOperation.m; sourceTree = "<group>"; };
+		E248AF2F18571E4200E99F50 /* FmdbReadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbReadOperation.h; path = Operations/FmdbReadOperation.h; sourceTree = "<group>"; };
+		E248AF3018571E4200E99F50 /* FmdbReadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbReadOperation.m; path = Operations/FmdbReadOperation.m; sourceTree = "<group>"; };
+		E2ADDF311857312800352D0B /* FmdbClearOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FmdbClearOperation.h; path = Operations/FmdbClearOperation.h; sourceTree = "<group>"; };
+		E2ADDF321857312800352D0B /* FmdbClearOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FmdbClearOperation.m; path = Operations/FmdbClearOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +144,7 @@
 		E248AEB31855DA5200E99F50 = {
 			isa = PBXGroup;
 			children = (
+				E248AF241857084E00E99F50 /* Default-568h@2x.png */,
 				E248AEFB1855E6F600E99F50 /* fmdb.xcodeproj */,
 				E248AF0E1855EC2100E99F50 /* 3rd Party Libs */,
 				E248AEC51855DA5200E99F50 /* DBsTesting */,
@@ -232,6 +247,14 @@
 		E248AF151855F49300E99F50 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				E248AF2918571C9B00E99F50 /* FmdbOperation.h */,
+				E248AF2A18571C9B00E99F50 /* FmdbOperation.m */,
+				E248AF2F18571E4200E99F50 /* FmdbReadOperation.h */,
+				E248AF3018571E4200E99F50 /* FmdbReadOperation.m */,
+				E248AF2C18571E2C00E99F50 /* FmdbWriteOperation.h */,
+				E248AF2D18571E2C00E99F50 /* FmdbWriteOperation.m */,
+				E2ADDF311857312800352D0B /* FmdbClearOperation.h */,
+				E2ADDF321857312800352D0B /* FmdbClearOperation.m */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -358,6 +381,7 @@
 				E248AEDB1855DA5200E99F50 /* Images.xcassets in Resources */,
 				E248AED31855DA5200E99F50 /* Main_iPhone.storyboard in Resources */,
 				E248AECA1855DA5200E99F50 /* InfoPlist.strings in Resources */,
+				E248AF251857084E00E99F50 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +402,11 @@
 			files = (
 				E248AF1C1855F76700E99F50 /* DBTFmdbManager.m in Sources */,
 				E248AF1F1855F7A500E99F50 /* DBTCoreDataManager.m in Sources */,
+				E2ADDF331857312800352D0B /* FmdbClearOperation.m in Sources */,
+				E248AF2E18571E2C00E99F50 /* FmdbWriteOperation.m in Sources */,
+				E248AF3118571E4200E99F50 /* FmdbReadOperation.m in Sources */,
 				E248AF191855F54900E99F50 /* DBTManager.m in Sources */,
+				E248AF2B18571C9B00E99F50 /* FmdbOperation.m in Sources */,
 				E248AECC1855DA5200E99F50 /* main.m in Sources */,
 				E248AED01855DA5200E99F50 /* DBTAppDelegate.m in Sources */,
 				E248AED91855DA5200E99F50 /* DBTViewController.m in Sources */,
@@ -521,6 +549,7 @@
 		E248AEF21855DA5200E99F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -537,6 +566,7 @@
 		E248AEF31855DA5200E99F50 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -611,6 +641,7 @@
 				E248AEF31855DA5200E99F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E248AEF41855DA5200E99F50 /* Build configuration list for PBXNativeTarget "DBsTestingTests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +650,7 @@
 				E248AEF61855DA5200E99F50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
