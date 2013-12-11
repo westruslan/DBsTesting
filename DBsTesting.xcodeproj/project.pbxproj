@@ -374,9 +374,9 @@
 		E248AEB41855DA5200E99F50 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = BDT;
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = WSI;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					E248AEBB1855DA5200E99F50 = {
 						DevelopmentTeam = PBLK7VB9B2;
