@@ -46,7 +46,11 @@
     NSURL *modelURL = [[[NSBundle mainBundle] URLForResource:@"TafModel" withExtension:@"momd"] URLByAppendingPathComponent:@"TafModel.mom"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     
-    NSURL *storeURL = [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"CoreDataTafs.sqlite"]];
+    NSString *storeFilePath = [NSTemporaryDirectory() stringByAppendingPathComponent:@"CoreDataTafs.sqlite"];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:storeFilePath])
+        [[NSFileManager defaultManager] removeItemAtPath:storeFilePath error:NULL];
+    
+    NSURL *storeURL = [NSURL fileURLWithPath:storeFilePath];
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:_managedObjectModel];
     NSPersistentStore *addedStore = [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error];
