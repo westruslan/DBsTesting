@@ -60,8 +60,7 @@ static NSString* const kTableCreateIndexFormat = @"CREATE INDEX icao_id_idx ON %
     // Create some tables to insert data into
     [_dataBase inDatabase:^(FMDatabase *db)
     {
-        NSArray *tableNamesArray = @[@"TAF", @"METAR", @"TAF1", @"METAR1", @"METAR2"];
-        for (NSString *tableName in tableNamesArray)
+        for (NSString *tableName in [SharedConstants tableNamesArray])
         {
             NSString *queryString = [NSString stringWithFormat:kTableCreateFormat, tableName];
             [db executeUpdate:queryString];

@@ -10,7 +10,11 @@
 
 @interface SharedConstants : NSObject
 
++ (NSString *)tafRawText;
++ (NSString *)tafOutputString;
++ (NSString *)entityId;
 + (NSString *)someIcaoId;
 + (NSString *)someTableName;
++ (NSArray *)tableNamesArray;
 
 @end

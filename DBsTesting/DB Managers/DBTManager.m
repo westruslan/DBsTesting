@@ -64,9 +64,9 @@
 - (void)runTests
 {
     [self clearStatistics];
-    _readTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(readTimerFireMethod:) userInfo:nil repeats:YES];
-    _writeTimer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(writeTimerFireMethod:) userInfo:nil repeats:YES];
-    _clearTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(spawnTimerFireMethod:) userInfo:nil repeats:YES];
+    _readTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(readTimerFireMethod:) userInfo:nil repeats:YES];
+    _writeTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(writeTimerFireMethod:) userInfo:nil repeats:YES];
+    _clearTimer = [NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(spawnTimerFireMethod:) userInfo:nil repeats:YES];
     
     _isRunning = YES;
 }

@@ -23,11 +23,8 @@ static NSString * const kTafInsertQuery = @"INSERT INTO %@ VALUES ('%f', '%@', '
     NSString *tafInsertQuery = [[NSString alloc] initWithFormat:kTafInsertQuery,
                                 [SharedConstants someTableName],
                                 [expireDT timeIntervalSince1970],
-                                @"TAF.AMD KBGM 041414Z 0414/0512 22008KT P6SM SCT025 BKN100 TEMPO\
-                                0414/0416 BKN025\
-                                FM041600 21010KT P6SM BKN040\
-                                FM050000 24004KT P6SM SCT200 TEMPO 0509/0512 4SM BR=",
-                                @"AMENDED Forecast for KBGM, issued at 14:14Z, Dec 4. VALID from 14:00Z, Dec 4 through 12:00Z, Dec 5",
+                                [SharedConstants tafRawText],
+                                [SharedConstants tafOutputString],
                                 nil,
                                 [startTime timeIntervalSince1970],
                                 [endTime timeIntervalSince1970],

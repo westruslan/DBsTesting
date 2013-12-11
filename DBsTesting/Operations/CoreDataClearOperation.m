@@ -22,7 +22,7 @@
             [_backgroundContext deleteObject:tafObject];
         }
         
-        //[_backgroundContext save:NULL];
+        [_backgroundContext save:NULL];
         
         NSDate *endDate = [NSDate date];
         [_dbManager dataClearedIn:[endDate timeIntervalSinceDate:startDate]];

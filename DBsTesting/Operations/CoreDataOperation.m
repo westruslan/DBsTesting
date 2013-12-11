@@ -36,7 +36,7 @@
     NSMutableArray *results = [NSMutableArray array];
     
     NSFetchRequest* request = [[NSFetchRequest alloc] init];
-    request.entity = [NSEntityDescription entityForName:@"Taf" inManagedObjectContext:_backgroundContext];
+    request.entity = [NSEntityDescription entityForName:[SharedConstants entityId] inManagedObjectContext:_backgroundContext];
     request.predicate = [NSPredicate predicateWithFormat:@"(%K like %@) AND (%K like %@)", @"icaoId", icaoId, @"tableName", tableName];
     
     NSError *error = nil;
