@@ -14,6 +14,10 @@
 #import "FmdbClearOperation.h"
 
 
+static NSString* const kTableCreateFormat = @"CREATE TABLE %@ (expiration_date float, raw_text TEXT, output_string TEXT, geospatial_key TEXT, start_time INTEGER, end_time INTEGER, icao_id varchar(4), issue_time INTEGER);";
+static NSString* const kTableCreateIndexFormat = @"CREATE INDEX icao_id_idx ON %@ (icao_id);";
+
+
 @interface DBTFmdbManager ()
 {
     FMDatabaseQueue *_dataBase;
@@ -56,28 +60,27 @@
     // Create some tables to insert data into
     [_dataBase inDatabase:^(FMDatabase *db)
     {
-        [db executeUpdate:@"CREATE TABLE TAF (expiration_date float, raw_text TEXT, output_string TEXT, geospatial_key TEXT, start_time INTEGER, end_time INTEGER, icao_id varchar(4), issue_time INTEGER);"];
+        NSArray *tableNamesArray = @[@"TAF", @"METAR", @"TAF1", @"METAR1", @"METAR2"];
+        for (NSString *tableName in tableNamesArray)
+        {
+            NSString *queryString = [NSString stringWithFormat:kTableCreateFormat, tableName];
+            [db executeUpdate:queryString];
+        }
     }];
 }
 
 - (void)spawnReadOperation
 {
-    for (NSInteger index = 0; index <= [DBTManager numberOfReadOperations]; index++)
-    {
-        FmdbReadOperation *readOperation = [[FmdbReadOperation alloc] initWithDatabase:_dataBase dataManager:self];
-        [_operationQueue addOperation:readOperation];
-        [readOperation release];
-    }
+    FmdbReadOperation *readOperation = [[FmdbReadOperation alloc] initWithDatabase:_dataBase dataManager:self];
+    [_operationQueue addOperation:readOperation];
+    [readOperation release];
 }
 
 - (void)spawnWriteOperation
 {
-    for (NSInteger index = 0; index <= [DBTManager numberOfWriteOperations]; index++)
-    {
-        FmdbWriteOperation *writeOperation = [[FmdbWriteOperation alloc] initWithDatabase:_dataBase dataManager:self];
-        [_operationQueue addOperation:writeOperation];
-        [writeOperation release];
-    }
+    FmdbWriteOperation *writeOperation = [[FmdbWriteOperation alloc] initWithDatabase:_dataBase dataManager:self];
+    [_operationQueue addOperation:writeOperation];
+    [writeOperation release];
 }
 
 - (void)spawnClearOperation

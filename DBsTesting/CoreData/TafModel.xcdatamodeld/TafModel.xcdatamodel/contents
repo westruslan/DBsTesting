@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5029" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Taf" representedClassName="Taf" syncable="YES">
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="expireDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="geospatialKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="icaoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="issueTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="outputString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rawText" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="tableName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Taf" positionX="-6309" positionY="-1728" width="128" height="178"/>
+    </elements>
+</model>

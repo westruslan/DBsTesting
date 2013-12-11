@@ -19,7 +19,7 @@ static NSString * const kSelectTafQueryFormat = @"SELECT raw_text from %@ WHERE 
 - (void)main
 {
     __block NSMutableArray *results = [NSMutableArray array];
-    __block NSString *tafQueryRequest = [NSString stringWithFormat:kSelectTafQueryFormat, [self someTableName], [self someIcaoId]];
+    __block NSString *tafQueryRequest = [NSString stringWithFormat:kSelectTafQueryFormat, [SharedConstants someTableName], [SharedConstants someIcaoId]];
     if (![self isCancelled])
     {
         NSDate *startDate = [NSDate date];

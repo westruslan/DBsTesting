@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface DBTViewController : UIViewController
+{
+    IBOutlet UILabel *_topLabel;
+    IBOutlet UILabel *_readOperations;
+    IBOutlet UILabel *_writeOperations;
+    IBOutlet UILabel *_clearOperations;
+    IBOutlet UILabel *_otherInfo;
+}
 
 - (IBAction)fmdbTestTapped;
 - (IBAction)cdTestTapped;

@@ -15,7 +15,7 @@
 
 - (void)main
 {
-    __block NSString *tafClearQuery = [NSString stringWithFormat:@"DELETE FROM %@ WHERE icao_id = '%@'", [self someTableName], [self someIcaoId]];
+    __block NSString *tafClearQuery = [NSString stringWithFormat:@"DELETE FROM %@ WHERE icao_id = '%@'", [SharedConstants someTableName], [SharedConstants someIcaoId]];
     if (![self isCancelled])
     {
         NSDate *startDate = [NSDate date];

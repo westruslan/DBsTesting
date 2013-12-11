@@ -21,7 +21,7 @@ static NSString * const kTafInsertQuery = @"INSERT INTO %@ VALUES ('%f', '%@', '
     NSDate *startTime = [expireDT dateByAddingTimeInterval:2*60*60.0];
     NSDate *endTime = [expireDT dateByAddingTimeInterval:4*60*60.0];
     NSString *tafInsertQuery = [[NSString alloc] initWithFormat:kTafInsertQuery,
-                                [self someTableName],
+                                [SharedConstants someTableName],
                                 [expireDT timeIntervalSince1970],
                                 @"TAF.AMD KBGM 041414Z 0414/0512 22008KT P6SM SCT025 BKN100 TEMPO\
                                 0414/0416 BKN025\
@@ -31,7 +31,7 @@ static NSString * const kTafInsertQuery = @"INSERT INTO %@ VALUES ('%f', '%@', '
                                 nil,
                                 [startTime timeIntervalSince1970],
                                 [endTime timeIntervalSince1970],
-                                [self someIcaoId],
+                                [SharedConstants someIcaoId],
                                 [endTime timeIntervalSince1970]];
     
     if (![self isCancelled])

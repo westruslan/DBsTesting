@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SharedConstants.h"
 
 @class FMDatabaseQueue;
 @class DBTManager;
@@ -18,7 +19,5 @@
 }
 
 - (id)initWithDatabase:(FMDatabaseQueue *)dataBase dataManager:(DBTManager *)dbManager;
-- (NSString *)someIcaoId;
-- (NSString *)someTableName;
 
 @end

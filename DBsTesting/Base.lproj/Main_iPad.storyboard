@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGX-hd-ox2">
-                                <rect key="frame" x="20" y="20" width="130" height="44"/>
+                                <rect key="frame" x="244" y="20" width="130" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="Ilv-ZD-ax9"/>
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zhb-u9-Bvz">
-                                <rect key="frame" x="170" y="20" width="130" height="44"/>
+                                <rect key="frame" x="394" y="20" width="130" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="dXo-Hb-O6b"/>
@@ -51,7 +51,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fY8-ey-jqn">
-                                <rect key="frame" x="127" y="71" width="68" height="44"/>
+                                <rect key="frame" x="351" y="71" width="68" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="68" id="f7M-Sk-YZ9"/>
@@ -68,17 +68,89 @@
                                     <action selector="stopRunningTests" destination="BYZ-38-t0r" eventType="touchUpInside" id="d6c-ut-zqf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZG-jD-3Az">
+                                <rect key="frame" x="20" y="177" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DR3-zq-oqs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU6-N7-yV4">
+                                <rect key="frame" x="21" y="148" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1cP-Pi-r1S"/>
+                                    <constraint firstAttribute="width" constant="728" id="4iT-yT-SML"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaG-UR-13e">
+                                <rect key="frame" x="20" y="206" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yB1-eJ-1Ia"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atA-nn-cVN">
+                                <rect key="frame" x="20" y="235" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="paF-Sa-oIm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McH-zW-7LB">
+                                <rect key="frame" x="20" y="264" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jej-tv-qEy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="fY8-ey-jqn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="127" id="Dqn-IY-CEw"/>
+                            <constraint firstItem="atA-nn-cVN" firstAttribute="trailing" secondItem="LaG-UR-13e" secondAttribute="trailing" type="default" id="4Zl-hp-dku"/>
+                            <constraint firstAttribute="trailing" secondItem="zhb-u9-Bvz" secondAttribute="trailing" constant="244" id="8bU-dJ-iRB"/>
+                            <constraint firstItem="dU6-N7-yV4" firstAttribute="centerX" secondItem="fY8-ey-jqn" secondAttribute="centerX" type="default" id="A5k-1P-hVM"/>
                             <constraint firstItem="fGX-hd-ox2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GPU-lh-bhH"/>
+                            <constraint firstItem="fGX-hd-ox2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="244" id="HAV-EW-5mK"/>
+                            <constraint firstItem="McH-zW-7LB" firstAttribute="top" secondItem="atA-nn-cVN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jph-up-wQG"/>
                             <constraint firstItem="zhb-u9-Bvz" firstAttribute="baseline" secondItem="fGX-hd-ox2" secondAttribute="baseline" type="default" id="Nqo-Wi-ldo"/>
-                            <constraint firstItem="zhb-u9-Bvz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="170" id="Ssk-MM-WYU"/>
-                            <constraint firstItem="fGX-hd-ox2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="amv-MP-Rre"/>
-                            <constraint firstItem="fY8-ey-jqn" firstAttribute="top" secondItem="zhb-u9-Bvz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kcL-z8-daE"/>
+                            <constraint firstItem="McH-zW-7LB" firstAttribute="leading" secondItem="atA-nn-cVN" secondAttribute="leading" type="default" id="Si1-6I-l86"/>
+                            <constraint firstItem="LaG-UR-13e" firstAttribute="leading" secondItem="atA-nn-cVN" secondAttribute="leading" type="default" id="U90-K2-auI"/>
+                            <constraint firstItem="fY8-ey-jqn" firstAttribute="top" secondItem="zhb-u9-Bvz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="b3a-XL-Mp3"/>
+                            <constraint firstItem="dU6-N7-yV4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="148" id="bPk-BF-BWY"/>
+                            <constraint firstItem="McH-zW-7LB" firstAttribute="trailing" secondItem="atA-nn-cVN" secondAttribute="trailing" type="default" id="c2r-m7-A8p"/>
+                            <constraint firstItem="dU6-N7-yV4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="21" id="cCH-xi-Op8"/>
+                            <constraint firstItem="atA-nn-cVN" firstAttribute="top" secondItem="LaG-UR-13e" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cQt-g9-Uia"/>
+                            <constraint firstItem="hZG-jD-3Az" firstAttribute="trailing" secondItem="LaG-UR-13e" secondAttribute="trailing" type="default" id="crQ-KK-yaz"/>
+                            <constraint firstItem="hZG-jD-3Az" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="d0a-Du-7Wz"/>
+                            <constraint firstItem="hZG-jD-3Az" firstAttribute="leading" secondItem="LaG-UR-13e" secondAttribute="leading" type="default" id="e2A-3x-wIr"/>
+                            <constraint firstAttribute="trailing" secondItem="hZG-jD-3Az" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hWu-4F-7VD"/>
+                            <constraint firstItem="hZG-jD-3Az" firstAttribute="top" secondItem="dU6-N7-yV4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pOn-sk-c3j"/>
+                            <constraint firstItem="LaG-UR-13e" firstAttribute="top" secondItem="hZG-jD-3Az" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pjM-jo-BmY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_clearOperations" destination="atA-nn-cVN" id="FOu-0h-9wS"/>
+                        <outlet property="_otherInfo" destination="McH-zW-7LB" id="lmM-rQ-a3A"/>
+                        <outlet property="_readOperations" destination="hZG-jD-3Az" id="LvQ-fz-yDd"/>
+                        <outlet property="_topLabel" destination="dU6-N7-yV4" id="vjl-MS-LF9"/>
+                        <outlet property="_writeOperations" destination="LaG-UR-13e" id="ufl-j9-Bwl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
