@@ -16,12 +16,15 @@ static NSString * const kWriteLabelFormat = @"WRITE     %2.2f           %2.2f   
 static NSString * const kClearLabelFormat = @"CLEARS    %2.2f           %2.2f           %2.2f";
 static NSString * const kOtherInfoLableFormat = @"Queued ops = %u (R=%d,W=%d,C=%d), Finished ops = %u (R=%d,W=%d,C=%d)";
 
+static NSTimeInterval const kDefaultStopTime = 10 * 60.0;
+
 @interface DBTViewController ()
 {
     DBTFmdbManager *_fmdbManager;
     DBTCoreDataManager *_coreDataManager;
     DBTManager *_currentManager;
     NSTimer *_refreshTimer;
+    NSTimer *_stopTimer;
 }
 
 @end
@@ -42,8 +45,10 @@ static NSString * const kOtherInfoLableFormat = @"Queued ops = %u (R=%d,W=%d,C=%
     _writeOperations.text = [NSString stringWithFormat:kWriteLabelFormat, 0.0, 0.0, 0.0];
     _clearOperations.text = [NSString stringWithFormat:kClearLabelFormat, 0.0, 0.0, 0.0];
     _otherInfo.text = [NSString stringWithFormat:kOtherInfoLableFormat, 0, 0, 0, 0, 0, 0, 0, 0];
+    _testedDBNameLabel.text = nil;
     
     _refreshTimer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(refreshStatistics) userInfo:nil repeats:YES];
+    _stopTimer = nil;
 }
 
 - (void)dealloc
@@ -65,9 +70,11 @@ static NSString * const kOtherInfoLableFormat = @"Queued ops = %u (R=%d,W=%d,C=%
 {
     [self stopRunningTests];
     
-    NSLog(@"Spawning FMDBs");
     _currentManager = _fmdbManager;
     [_fmdbManager setupDB];
+    
+    _testedDBNameLabel.text = @"FMDB";
+    _stopTimer = [NSTimer scheduledTimerWithTimeInterval:kDefaultStopTime target:self selector:@selector(stopRunningTests) userInfo:nil repeats:NO];
     [_fmdbManager runTests];
 }
 
@@ -75,9 +82,11 @@ static NSString * const kOtherInfoLableFormat = @"Queued ops = %u (R=%d,W=%d,C=%
 {
     [self stopRunningTests];
     
-    NSLog(@"Spawning CoreData");
     _currentManager = _coreDataManager;
     [_coreDataManager setupDB];
+    
+    _testedDBNameLabel.text = @"CoreData";
+    _stopTimer = [NSTimer scheduledTimerWithTimeInterval:kDefaultStopTime target:self selector:@selector(stopRunningTests) userInfo:nil repeats:NO];
     [_coreDataManager runTests];
 }
 
@@ -85,6 +94,8 @@ static NSString * const kOtherInfoLableFormat = @"Queued ops = %u (R=%d,W=%d,C=%
 {
     if (_currentManager.isRunning)
     {
+        [_stopTimer invalidate];
+        _stopTimer = nil;
         [_currentManager stopTests];
         [_currentManager teardownDB];
         _currentManager = nil;

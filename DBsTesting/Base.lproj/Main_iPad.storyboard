@@ -119,11 +119,22 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDP-ed-4GM">
+                                <rect key="frame" x="244" y="82" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="uIg-Zx-TG2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="atA-nn-cVN" firstAttribute="trailing" secondItem="LaG-UR-13e" secondAttribute="trailing" type="default" id="4Zl-hp-dku"/>
                             <constraint firstAttribute="trailing" secondItem="zhb-u9-Bvz" secondAttribute="trailing" constant="244" id="8bU-dJ-iRB"/>
+                            <constraint firstItem="XDP-ed-4GM" firstAttribute="baseline" secondItem="fY8-ey-jqn" secondAttribute="baseline" type="default" id="9og-Xa-uu1"/>
                             <constraint firstItem="dU6-N7-yV4" firstAttribute="centerX" secondItem="fY8-ey-jqn" secondAttribute="centerX" type="default" id="A5k-1P-hVM"/>
                             <constraint firstItem="fGX-hd-ox2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" symbolic="YES" type="default" id="GPU-lh-bhH"/>
                             <constraint firstItem="fGX-hd-ox2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="244" id="HAV-EW-5mK"/>
@@ -139,6 +150,7 @@
                             <constraint firstItem="hZG-jD-3Az" firstAttribute="trailing" secondItem="LaG-UR-13e" secondAttribute="trailing" type="default" id="crQ-KK-yaz"/>
                             <constraint firstItem="hZG-jD-3Az" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="d0a-Du-7Wz"/>
                             <constraint firstItem="hZG-jD-3Az" firstAttribute="leading" secondItem="LaG-UR-13e" secondAttribute="leading" type="default" id="e2A-3x-wIr"/>
+                            <constraint firstItem="XDP-ed-4GM" firstAttribute="leading" secondItem="fGX-hd-ox2" secondAttribute="leading" type="default" id="epN-YE-kKS"/>
                             <constraint firstAttribute="trailing" secondItem="hZG-jD-3Az" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="hWu-4F-7VD"/>
                             <constraint firstItem="hZG-jD-3Az" firstAttribute="top" secondItem="dU6-N7-yV4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pOn-sk-c3j"/>
                             <constraint firstItem="LaG-UR-13e" firstAttribute="top" secondItem="hZG-jD-3Az" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="pjM-jo-BmY"/>
@@ -148,6 +160,7 @@
                         <outlet property="_clearOperations" destination="atA-nn-cVN" id="FOu-0h-9wS"/>
                         <outlet property="_otherInfo" destination="McH-zW-7LB" id="lmM-rQ-a3A"/>
                         <outlet property="_readOperations" destination="hZG-jD-3Az" id="LvQ-fz-yDd"/>
+                        <outlet property="_testedDBNameLabel" destination="XDP-ed-4GM" id="4gI-0V-yVW"/>
                         <outlet property="_topLabel" destination="dU6-N7-yV4" id="vjl-MS-LF9"/>
                         <outlet property="_writeOperations" destination="LaG-UR-13e" id="ufl-j9-Bwl"/>
                     </connections>

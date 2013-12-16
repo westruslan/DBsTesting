@@ -15,6 +15,7 @@
     IBOutlet UILabel *_writeOperations;
     IBOutlet UILabel *_clearOperations;
     IBOutlet UILabel *_otherInfo;
+    IBOutlet UILabel *_testedDBNameLabel;
 }
 
 - (IBAction)fmdbTestTapped;
